@@ -1,10 +1,14 @@
+import { Outlet } from 'react-router';
+
 const MainLayout = () => {
-  <div>
-    <h1>Welcome to the Home Page</h1>
-    <footer>
-      <hr />
-      <p>this is the footer</p>
-    </footer>
-  </div>;
+  return (
+    <div>
+      <Outlet />
+      <footer>
+        <hr />
+        <p>this is the footer</p>
+      </footer>
+    </div>
+  );
 };
 export default MainLayout;
