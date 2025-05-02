@@ -1,3 +1,7 @@
+/* * {
+  border: solid red 1px;
+} */
+
 html,
 body {
   height: 100%;
@@ -26,8 +30,9 @@ body {
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 1.5em;
-  flex: 1 1 1;
+  /* flex: 1 1 1; */
 }
 a:visited {
   color: inherit;
@@ -38,7 +43,7 @@ link {
 .links-container {
   margin-left: auto;
   margin-right: 10%;
-  padding: 0;
+  margin-top: 0px;
 }
 
 .main-layout {
@@ -56,24 +61,30 @@ link {
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
-.links {
-  margin-left: auto;
-  margin-right: 10%;
-  margin-top: 10px;
+.links-container {
+  display: flex;
+  align-items: center;
 }
 
 .link-item {
   margin: 10px;
   text-decoration: none;
 }
+
 /* Home component */
 /* ==================== */
 .home {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
+  /*  */
+}
+
+.home-text {
+  margin: 20px 20px;
 }
 
 .home-text h1,
@@ -82,12 +93,25 @@ link {
   font-weight: 400;
 }
 
+/* .home-text h1,
+.home-text h3, */
+.home-text p {
+  margin-top: 25px;
+  line-height: 150%;
+}
+
 #home-image {
+  margin: 0px 20px;
+  margin-left: 50px;
+  border-radius: 12px;
+  min-height: 200px;
+  min-width: 40%;
+  max-height: 1000px;
   height: 40%;
   width: 40%;
-  margin: 10px;
-  border-radius: 12px;
 }
 #link-to-about {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }

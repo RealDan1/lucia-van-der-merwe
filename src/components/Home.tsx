@@ -13,9 +13,8 @@ const Home = () => {
           thinking partner and coach along the way.
         </p>
 
-        <p></p>
         <Link to="/about" id="link-to-about">
-          <a>Read more about me →</a>
+          <p>Read more about me →</p>
         </Link>
       </div>
       <img src={image} alt="" id="home-image" />

@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <nav>
-        <h3 className="heading">LUCIA VAN DER MERWE</h3>
+        <p className="heading">LUCIA VAN DER MERWE</p>
 
         <div className="links-container">
           <Link to="/" className="link-item">
-            <a>Home</a>
+            Home
           </Link>
           <Link to="/about" className="link-item">
             About
