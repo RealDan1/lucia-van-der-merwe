@@ -1,23 +1,93 @@
-/* * {
-  border: 1px solid red;
-} */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #fffaf0;
+  background-color: #fff5ee;
   /* #fffaf0 */
   /*  <weight>: Use a value from 400 to 900
 <uniquifier>: Use a unique and descriptive class name */
-
-  font-family: 'Playfair Display', serif;
-  font-optical-sizing: auto;
-
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Playfair Display', sans-serif; */
+  /* font-optical-sizing: auto; */
+  font-weight: 190;
   font-style: normal;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 nav {
   display: flex;
   flex-direction: row;
+  margin-top: 1.5em;
+  flex: 1 1 1;
+}
+a:visited {
+  color: inherit;
+}
+link {
+  text-decoration: none;
+}
+.links-container {
+  margin-left: auto;
+  margin-right: 10%;
+  padding: 0;
 }
 
-Link {
+.main-layout {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 10px;
+}
+
+.heading {
+  margin-left: 4%;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.links {
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+
+.link-item {
   margin: 10px;
+  text-decoration: none;
+}
+/* Home component */
+/* ==================== */
+.home {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.home-text h1,
+.home-text h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+}
+
+#home-image {
+  height: 40%;
+  width: 40%;
+  margin: 10px;
+  border-radius: 12px;
+}
+#link-to-about {
+  text-decoration: none;
 }

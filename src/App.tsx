@@ -10,16 +10,24 @@ function App() {
   return (
     <>
       <nav>
-        <h1 className="heading">Lucia Van Der Merwe</h1>
+        <h3 className="heading">LUCIA VAN DER MERWE</h3>
 
-        <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/newsletter">Newsletter</Link>
+        <div className="links-container">
+          <Link to="/" className="link-item">
+            <a>Home</a>
+          </Link>
+          <Link to="/about" className="link-item">
+            About
+          </Link>
+          <Link to="/contact" className="link-item">
+            Contact
+          </Link>
+          <Link to="/newsletter" className="link-item">
+            Newsletter
+          </Link>
         </div>
       </nav>
-      <hr />
+
       <Routes>
         <Route element={<MainLayout />}>
           <Route index path="/" element={<Home />} />
@@ -28,6 +36,10 @@ function App() {
           <Route path="/newsletter" element={<Newsletter />} />
         </Route>
       </Routes>
+      <footer className="footer">
+        <hr />
+        <p>All Rights Reserved</p>
+      </footer>
     </>
   );
 }
