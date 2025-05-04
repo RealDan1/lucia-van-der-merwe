@@ -11,14 +11,13 @@ function CaptchaButton() {
 
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
-    setButtonEnabled(!!value); // Enable button when captcha is verified
+    setButtonEnabled(!!value);
   };
 
   const handleSubmit = () => {
     if (captchaValue) {
-      //open mail of client
       window.open('mailto:luciamakia01@gmail.com?subject=Request for Consultation&body=Dear Lucia, ');
-      // Reset captcha value and button state
+
       setCaptchaValue(null);
       setButtonEnabled(false);
     }
