@@ -17,7 +17,7 @@ function CaptchaButton() {
   const handleSubmit = () => {
     if (captchaValue) {
       //open mail of client
-      window.open('mailto:luciamakia01@gmail.com?subject=Newsletter&body=I would like to subscribe to the newsletter');
+      window.open('mailto:luciamakia01@gmail.com?subject=Request for Consultation&body=Dear Lucia, ');
       // Reset captcha value and button state
       setCaptchaValue(null);
       setButtonEnabled(false);
