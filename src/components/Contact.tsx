@@ -1,7 +1,10 @@
+import Recaptcha from './Recaptcha';
+
 const Contact = () => {
   return (
     <>
-      <p>This is Contact</p>
+      <h2>Contact me</h2>
+      <Recaptcha />
     </>
   );
 };
