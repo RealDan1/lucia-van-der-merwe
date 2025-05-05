@@ -93,7 +93,7 @@ a:hover {
   justify-content: space-between;
   padding: 50px 10%;
   gap: 20px;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 700ms ease-in-out;
 }
 
 .section:nth-child(even) {
@@ -147,6 +147,7 @@ button:hover {
   justify-content: space-between;
   padding: 50px 10%;
   gap: 20px;
+  animation: fadeIn 700ms ease-in-out;
 }
 
 .card {
@@ -215,6 +216,56 @@ button:hover {
   font-size: large;
 }
 
+/* Add subtle text shadow to all text */
+html,
+body,
+#root,
+nav,
+.heading,
+.links-container,
+.link-item,
+.main-layout,
+.footer,
+.section,
+.section-text,
+.quote,
+button,
+.card,
+.newsletter-content,
+.newsletter-benefits,
+.benefit-item,
+.logo-quote,
+.modern-input,
+.form-group,
+.tab-content,
+.text-center,
+.mb-20,
+.mt-20 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+/* Enhance shadow for headings for more depth */
+.heading,
+.section-text h1,
+.section-text h2,
+.card h3,
+.newsletter-benefits h3 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.13);
+}
+
+button,
+.modern-button {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+a,
+.link-item {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+}
 /* Mobile Design */
 @media (max-width: 768px) {
   .back-to-top {
@@ -289,7 +340,8 @@ button:hover {
 .newsletter-benefits {
   margin-top: 30px;
   padding: 20px;
-  background: #f8f9fa;
+  background: #eae7dc;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.06);
   border-radius: 12px;
 }
 
