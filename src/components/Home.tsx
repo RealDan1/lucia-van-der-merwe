@@ -1,4 +1,4 @@
-import image from '../assets/lucia-image.png';
+import luciaImage from '../assets/lucia-image.png';
 import { Link } from 'react-router';
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
           <p>Read more about me →</p>
         </Link>
       </div>
-      <img src={image} alt="" id="home-image" />
+      <img src={luciaImage} alt="" id="home-image" />
     </div>
   );
 };

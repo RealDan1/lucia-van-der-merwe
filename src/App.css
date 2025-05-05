@@ -34,11 +34,13 @@ nav {
   margin-top: 1.5em;
   /* flex: 1 1 1; */
 }
-a:visited {
+a:visited,
+a:link {
   color: inherit;
 }
 link {
   text-decoration: none;
+  color: inherit;
 }
 .links-container {
   margin-left: auto;

@@ -14,16 +14,16 @@ function App() {
 
         <div className="links-container">
           <Link to="/" className="link-item">
-            Home
+            <a>Home</a>
           </Link>
           <Link to="/about" className="link-item">
-            About
+            <a>About</a>
           </Link>
           <Link to="/contact" className="link-item">
-            Contact
+            <a>Contact</a>
           </Link>
           <Link to="/newsletter" className="link-item">
-            Newsletter
+            <a>Newsletter</a>
           </Link>
         </div>
       </nav>
