@@ -94,7 +94,7 @@ a:hover {
   justify-content: space-between;
   padding: 50px 10%;
   gap: 20px;
-  animation: fadeIn 700ms ease-in-out;
+  animation: fadeIn 800ms ease-in-out;
 }
 
 .section:nth-child(even) {
@@ -148,7 +148,7 @@ button:hover {
   justify-content: space-between;
   padding: 50px 10%;
   gap: 20px;
-  animation: fadeIn 700ms ease-in-out;
+  animation: fadeIn 800ms ease-in-out;
 }
 
 .card {
