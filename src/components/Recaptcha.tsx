@@ -26,19 +26,10 @@ function CaptchaButton() {
   return (
     <div className="captcha-container">
       <ReCAPTCHA sitekey={recaptchaSiteKey} onChange={handleCaptchaChange} />
-
       <button
         onClick={handleSubmit}
         disabled={!buttonEnabled}
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: buttonEnabled ? '#4CAF50' : '#cccccc',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: buttonEnabled ? 'pointer' : 'not-allowed',
-        }}
+        className={`modern-button ${!buttonEnabled ? 'disabled' : ''}`}
       >
         Email me
       </button>
