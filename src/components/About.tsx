@@ -2,7 +2,6 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-sections">
-        {/* Section 1: text left, image right */}
         <div className="section">
           <div className="section-text">
             <h1>About Me</h1>
@@ -36,7 +35,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Section 2: image left, text right */}
         <div className="section">
           <img src="https://placehold.co/600x400" alt="Corporate Career" />
           <div className="section-text">
@@ -48,8 +46,20 @@ const About = () => {
           </div>
         </div>
 
-        {/* Section 3: text left, image right */}
         <div className="section">
+          <div className="section-text">
+            <h2>Lifelong Learning & Coaching Journey</h2>
+            <p>
+              I completed relevant technical, business and leadership courses during these years, and it was the
+              realisation of a life-long dream to study towards a professional coach practitioner qualification at the
+              South African College of Applied Psychology (SACAP) from March 2020 to June 2021.
+            </p>
+          </div>
+          <img src="https://placehold.co/600x400?text=Learning+Journey" alt="Lifelong Learning and Coaching Journey" />
+        </div>
+
+        <div className="section">
+          <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
           <div className="section-text">
             <h2>Coaching Philosophy</h2>
             <p>
@@ -57,10 +67,23 @@ const About = () => {
               opportunities, and goals to achieve your desired future.
             </p>
           </div>
-          <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
         </div>
 
-        {/* Section 4: image left, text right */}
+        <div className="section">
+          <div className="section-text">
+            <h2>Integrating Positive Psychology & Neuroscience</h2>
+            <p>
+              Alongside my core coaching model, I incorporate insights from positive psychology and neuroscience—fields
+              I am passionate about and continue to study. This allows me to support clients with evidence-based
+              strategies that foster well-being, resilience, and personal growth.
+            </p>
+          </div>
+          <img
+            src="https://placehold.co/600x400?text=Positive+Psychology+%26+Neuroscience"
+            alt="Positive Psychology and Neuroscience"
+          />
+        </div>
+
         <div className="section">
           <img src="https://placehold.co/600x400" alt="Testimonials" />
           <div className="section-text">
