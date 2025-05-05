@@ -54,7 +54,6 @@ function App() {
       </Routes>
 
       <footer className="footer">
-        <hr />
         <p>All Rights Reserved</p>
         <div className="footer-links">
           <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> |{' '}
