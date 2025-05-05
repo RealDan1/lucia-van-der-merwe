@@ -83,15 +83,6 @@ const About = () => {
             alt="Positive Psychology and Neuroscience"
           />
         </div>
-
-        <div className="section">
-          <img src="https://placehold.co/600x400" alt="Testimonials" />
-          <div className="section-text">
-            <h2>Testimonials</h2>
-            <p>"Lucia's guidance has been life-changing."</p>
-            <p>"Her coaching style is both compassionate and effective."</p>
-          </div>
-        </div>
       </div>
     </div>
   );
