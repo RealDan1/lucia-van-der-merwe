@@ -18,12 +18,18 @@ const About = () => {
         <div className="three-cards">
           <div className="card">
             <h3>BA Degree (Psychology)</h3>
-            <p>Comprehensive understanding of human behavior and mental processes.</p>
+            <p>Comprehensive understanding of human behaviour and mental processes.</p>
+          </div>
+          <div className="card">
+            <h3>Post graduate HED</h3>
+
+            <p>Specialized training in education to empower and inspire effectively.</p>
           </div>
           <div className="card">
             <h3>Certified Coach Practitioner</h3>
             <p>Accredited by SACAP for professional coaching excellence.</p>
           </div>
+
           <div className="card">
             <h3>Prince II Project Management</h3>
             <p>Expertise in managing complex projects with precision and efficiency.</p>
