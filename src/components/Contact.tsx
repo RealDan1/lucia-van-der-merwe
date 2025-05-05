@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <Recaptcha />
       </div>
-      <img src="https://via.placeholder.com/400" alt="Contact" />
+      <img src="https://placehold.co/600x400" alt="Contact" />
     </div>
   );
 };

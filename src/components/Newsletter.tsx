@@ -24,7 +24,7 @@ const Newsletter = () => {
           </div>
         </div>
       </div>
-      <img src="https://via.placeholder.com/400" alt="Newsletter" />
+      <img src="https://placehold.co/600x400" alt="Newsletter" />
     </div>
   );
 };

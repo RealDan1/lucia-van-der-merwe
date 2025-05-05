@@ -63,8 +63,8 @@ function App() {
       </footer>
 
       {showBackToTop && (
-        <button className="back-to-top" onClick={scrollToTop}>
-          ↑ Back to Top
+        <button className="back-to-top" onClick={scrollToTop} aria-label="Back to top">
+          ↑
         </button>
       )}
     </>

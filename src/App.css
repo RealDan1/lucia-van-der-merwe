@@ -97,7 +97,7 @@ a:hover {
 }
 
 .section:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .section img {
@@ -139,7 +139,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #333;
 }
 
 .three-cards {
@@ -170,30 +170,64 @@ button:hover {
 /* Back to top button */
 .back-to-top {
   position: fixed;
-  left: 20px;
-  bottom: 20px;
-  background: #6c63ff;
-  color: white;
-  width: 45px;
-  height: 45px;
+  left: 24px;
+  bottom: 24px;
+  background: #333;
+  color: #fff;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(108, 99, 255, 0.2);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.13);
   z-index: 1000;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  user-select: none;
 }
 
-.back-to-top:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+.back-to-top:hover,
+.back-to-top:focus {
+  background: #222;
+  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.18);
+  transform: translateY(-2px) scale(1.06);
+  color: #d4a373;
 }
 
-/* Modern button styles */
+.back-to-top:active {
+  background: #444;
+  transform: scale(0.97);
+}
+
+.back-to-top {
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+#read-more {
+  font-size: large;
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 36px;
+    height: 36px;
+    left: 12px;
+    bottom: 12px;
+    font-size: 1.15rem;
+  }
+}
+
 .modern-button {
-  background: #6c63ff;
+  background: #333;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -230,18 +264,17 @@ button:hover {
   border-radius: 8px;
   padding: 12px 16px;
   width: 100%;
-  margin: 8px 0;
+  margin: 12px 0;
   transition: all 0.3s ease;
   font-size: 1rem;
 }
 
 .modern-input:focus {
   outline: none;
-  border-color: #6c63ff;
+  border-color: #333;
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
 }
 
-/* Form spacing */
 .form-group {
   margin-bottom: 20px;
 }
@@ -269,46 +302,159 @@ button:hover {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .container {
-    padding: 10px;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 5%;
   }
 
-  .navbar {
-    padding: 10px;
+  .logo-container {
+    width: 100%;
+    align-items: flex-start;
   }
 
-  .content-box {
-    margin: 10px;
-    padding: 15px;
+  .links-container {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
   }
 
-  .image-container {
-    display: none;
+  .main-layout {
+    padding: 10px 0;
+  }
+
+  .section {
+    flex-direction: column !important;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 18px 4vw;
+    gap: 0;
+    background: #fff;
+    border-radius: 12px;
+    margin: 12px 8px; /* Add horizontal margin */
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.06);
+  }
+
+  .section img {
+    width: 100%;
+    min-width: 0;
+    max-width: 320px;
+    margin: 18px auto 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.06);
+  }
+
+  /* Hide all images except the first in each section */
+  /* .section img:not(:second-child) {
+    display: none !important;
+  } */
+
+  .section-text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .section-text h1,
+  .section-text h2 {
+    font-size: 1.3em;
+  }
+
+  .section-text p,
+  .quote {
+    font-size: 1em;
+    margin-bottom: 14px;
+  }
+
+  .three-cards {
+    flex-direction: column;
+    padding: 18px 4vw;
+    gap: 12px;
+    margin: 0 8px; /* Add horizontal margin */
+  }
+
+  .card {
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 12px;
+    margin-top: 18px;
+    font-size: 0.98em;
+  }
+
+  .benefit-item {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .footer {
+    padding: 12px 4vw;
+    font-size: 0.95em;
   }
 
   .back-to-top {
-    width: 40px;
-    height: 40px;
-    left: 15px;
-    bottom: 15px;
+    width: 36px;
+    height: 36px;
+    left: 12px;
+    bottom: 12px;
+    font-size: 1.15rem;
   }
 
   .modern-button {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    padding: 10px 0;
+  }
+
+  .modern-input {
+    font-size: 1em;
+    padding: 10px 12px;
+    max-width: 90%;
   }
 
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
+}
 
-  .logo-quote {
-    font-size: 0.8rem;
-  }
+.container {
+  padding: 10px;
+}
 
-  .tab-content {
-    padding: 15px;
-  }
+.navbar {
+  padding: 10px;
+}
+
+.content-box {
+  margin: 10px;
+  padding: 15px;
+}
+
+.image-container {
+  display: none;
+}
+
+.modern-button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.logo-quote {
+  font-size: 0.8rem;
+}
+
+.tab-content {
+  padding: 15px;
 }
 
 /* Additional utility classes */
