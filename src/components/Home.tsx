@@ -1,4 +1,7 @@
 import luciaImage from '../assets/lucia-image.png';
+import plantBeigeImage from '../assets/plant-1-beige.png';
+import beachImage from '../assets/beach.png';
+import riverImage from '../assets/river.png';
 
 const Home = () => {
   return (
@@ -23,7 +26,7 @@ const Home = () => {
 
       <div className="mobile-box">
         <div className="section">
-          <img src="https://placehold.co/600x400" alt="Placeholder" />
+          <img src={plantBeigeImage} alt="Placeholder" />
           <div className="section-text">
             <h2>My Coaching Philosophy</h2>
             <p>
@@ -47,13 +50,13 @@ const Home = () => {
               achieve your goals. Together, we will create a roadmap to your desired future.
             </p>
           </div>
-          <img src="https://placehold.co/600x400" alt="Placeholder" />
+          <img src={beachImage} alt="Placeholder" />
         </div>
       </div>
 
       <div className="mobile-box">
         <div className="section">
-          <img src="https://placehold.co/600x400" alt="Placeholder" />
+          <img src={riverImage} alt="Placeholder" />
           <div className="section-text">
             <h2>Testimonials</h2>
             <p>"Lucia's guidance has been life-changing."</p>

@@ -295,10 +295,12 @@ a,
 }
 
 /* Logo section */
+
 .logo-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: center;
 }
 
 .logo-quote {
@@ -307,6 +309,12 @@ a,
   font-size: 0.9rem;
   margin-top: 5px;
   margin-left: 2px;
+}
+
+.links-container {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Input fields */
@@ -362,12 +370,13 @@ a,
 
   .logo-container {
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .links-container {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
