@@ -7,7 +7,8 @@ function CaptchaButton() {
 
   // Your site key from Google reCAPTCHA admin console
   //modify domains to add the deployed domain
-  const recaptchaSiteKey = '6Lc-vC0rAAAAAPXoih2IQ20PRcjyReDy_Y8oxv-P';
+  const recaptchaSiteKey = '6Lc9vC0rAAAAAFQbRWFr3KGq1B5ro9veyXKrHOCz';
+
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
     setButtonEnabled(!!value);
@@ -25,19 +26,10 @@ function CaptchaButton() {
   return (
     <div className="captcha-container">
       <ReCAPTCHA sitekey={recaptchaSiteKey} onChange={handleCaptchaChange} />
-
       <button
         onClick={handleSubmit}
         disabled={!buttonEnabled}
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: buttonEnabled ? '#4CAF50' : '#cccccc',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: buttonEnabled ? 'pointer' : 'not-allowed',
-        }}
+        className={`modern-button ${!buttonEnabled ? 'disabled' : ''}`}
       >
         Email me
       </button>

@@ -1,32 +1,91 @@
-import plant from '../assets/plant.png';
-
 const About = () => {
   return (
-    <>
-      <div className="text-container">
-        <h1>About Me</h1>
-        <p>
-          My passion for individual and societal well-being led me to study psychology, a degree which enabled me well
-          as I navigated my way through a rewarding and challenging corporate career in IS&T project management and
-          leadership at blue chip JSE listed companies.
-        </p>
-        <p>
-          {' '}
-          A few of these companies include Woolworths SA (15 years), Pick n Pay (5 years), the City of Cape Town (10
-          years) where my current role is that of Head of Business Systems, HR as well as professional coach.
-        </p>
-        <h2>Education and Accreditation</h2>
-        <ul>
-          <li>BA Degree (Psychology)</li>
-          <li>Post graduate HED</li>
-          <li>Post graduate Advanced Coach Practitioner Programme, Professional</li>
-          <li>Certified Coach Practitioner (SACAP)</li>
-          <li>Prince II Project Management Practitioner</li>
-          <li>PROSCII Certified Change Management Practitioner</li>
-        </ul>
+    <div className="about">
+      <div className="about-sections">
+        <div className="section">
+          <div className="section-text">
+            <h1>About Me</h1>
+            <p>
+              My passion for individual and societal well-being led me to study psychology, a degree which enabled me
+              well as I navigated my way through a rewarding and challenging corporate career in IS&T project management
+              and leadership at blue chip JSE listed companies.
+            </p>
+          </div>
+          <img src="https://placehold.co/600x400" alt="About Me" />
+        </div>
+
+        <div className="three-cards">
+          <div className="card">
+            <h3>BA Degree (Psychology)</h3>
+            <p>Comprehensive understanding of human behaviour and mental processes.</p>
+          </div>
+          <div className="card">
+            <h3>Post graduate HED</h3>
+
+            <p>Specialized training in education to empower and inspire effectively.</p>
+          </div>
+          <div className="card">
+            <h3>Certified Coach Practitioner</h3>
+            <p>Accredited by SACAP for professional coaching excellence.</p>
+          </div>
+
+          <div className="card">
+            <h3>Prince II Project Management</h3>
+            <p>Expertise in managing complex projects with precision and efficiency.</p>
+          </div>
+        </div>
+
+        <div className="section">
+          <img src="https://placehold.co/600x400" alt="Corporate Career" />
+          <div className="section-text">
+            <h2>Corporate Career</h2>
+            <p>
+              A few of these companies include Woolworths SA (15 years), Pick n Pay (5 years), and the City of Cape Town
+              (10 years), where my current role is that of Head of Business Systems, HR as well as professional coach.
+            </p>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="section-text">
+            <h2>Lifelong Learning & Coaching Journey</h2>
+            <p>
+              I completed relevant technical, business and leadership courses during these years, and it was the
+              realisation of a life-long dream to study towards a professional coach practitioner qualification at the
+              South African College of Applied Psychology (SACAP) from March 2020 to June 2021.
+            </p>
+          </div>
+          <img src="https://placehold.co/600x400?text=Learning+Journey" alt="Lifelong Learning and Coaching Journey" />
+        </div>
+
+        <div className="section">
+          <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
+          <div className="section-text">
+            <h2>Coaching Philosophy</h2>
+            <p>
+              My coaching approach is based on Gerard Egan’s client-centric therapeutic model, exploring issues,
+              opportunities, and goals to achieve your desired future.
+            </p>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="section-text">
+            <h2>Integrating Positive Psychology & Neuroscience</h2>
+            <p>
+              Alongside my core coaching model, I incorporate insights from positive psychology and neuroscience—fields
+              I am passionate about and continue to study. This allows me to support clients with evidence-based
+              strategies that foster well-being, resilience, and personal growth.
+            </p>
+          </div>
+          <img
+            src="https://placehold.co/600x400?text=Positive+Psychology+%26+Neuroscience"
+            alt="Positive Psychology and Neuroscience"
+          />
+        </div>
       </div>
-      <img src={plant} alt="plant-background" />
-    </>
+    </div>
   );
 };
+
 export default About;
