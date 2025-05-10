@@ -8,7 +8,6 @@ function CaptchaButton() {
   // Your site key from Google reCAPTCHA admin console
   //modify domains to add the deployed domain
   const recaptchaSiteKey = '6Lc-vC0rAAAAAPXoih2IQ20PRcjyReDy_Y8oxv-P';
-
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
     setButtonEnabled(!!value);
