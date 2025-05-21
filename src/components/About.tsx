@@ -1,10 +1,30 @@
 import room1 from '../assets/room1.png';
+import { useEffect, useRef } from 'react';
 
 const About = () => {
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    sectionRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="about">
       <div className="about-sections">
-        <div className="section">
+        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[0] = el)}>
           <div className="section-text">
             <h1>About Me</h1>
             <p>
@@ -16,28 +36,26 @@ const About = () => {
           <img src={room1} alt="About Me" />
         </div>
 
-        <div className="three-cards">
+        <div className="three-cards section-animate-right" ref={(el) => (sectionRefs.current[1] = el)}>
           <div className="card">
             <h3>BA Degree (Psychology)</h3>
             <p>Comprehensive understanding of human behaviour and mental processes.</p>
           </div>
           <div className="card">
             <h3>Post graduate HED</h3>
-
             <p>Specialized training in education to empower and inspire effectively.</p>
           </div>
           <div className="card">
             <h3>Certified Coach Practitioner</h3>
             <p>Accredited by SACAP for professional coaching excellence.</p>
           </div>
-
           <div className="card">
             <h3>Prince II Project Management</h3>
             <p>Expertise in managing complex projects with precision and efficiency.</p>
           </div>
         </div>
 
-        <div className="section">
+        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[2] = el)}>
           <img src="https://placehold.co/600x400" alt="Corporate Career" />
           <div className="section-text">
             <h2>Corporate Career</h2>
@@ -48,7 +66,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="section">
+        <div className="section section-animate-right" ref={(el) => (sectionRefs.current[3] = el)}>
           <div className="section-text">
             <h2>Lifelong Learning & Coaching Journey</h2>
             <p>
@@ -60,7 +78,7 @@ const About = () => {
           <img src="https://placehold.co/600x400?text=Learning+Journey" alt="Lifelong Learning and Coaching Journey" />
         </div>
 
-        <div className="section">
+        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[4] = el)}>
           <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
           <div className="section-text">
             <h2>Coaching Philosophy</h2>
@@ -71,7 +89,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="section">
+        <div className="section section-animate-right" ref={(el) => (sectionRefs.current[5] = el)}>
           <div className="section-text">
             <h2>Integrating Positive Psychology & Neuroscience</h2>
             <p>
