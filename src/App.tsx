@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Newsletter from './components/Newsletter';
+import Blog from './components/Blog';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -40,8 +40,8 @@ function App() {
           <Link to="/contact" className="link-item">
             Contact
           </Link>
-          <Link to="/newsletter" className="link-item">
-            Newsletter
+          <Link to="/blog" className="link-item">
+            Blog
           </Link>
         </div>
       </nav>
@@ -50,14 +50,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
 
       <footer className="footer">
         <p>All Rights Reserved</p>
         <div className="footer-links">
           <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> |{' '}
-          <Link to="/newsletter">Newsletter</Link>
+          <Link to="/blog">Blog</Link>
         </div>
       </footer>
 

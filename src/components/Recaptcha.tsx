@@ -16,7 +16,7 @@ function CaptchaButton() {
 
   const handleSubmit = () => {
     if (captchaValue) {
-      window.open('mailto:luciamakia01@gmail.com?subject=Request for Consultation&body=Dear Lucia, ');
+      window.open('mailto:placeholder@mailinator.com?subject=Request for Consultation&body=Dear Lucia, ');
 
       setCaptchaValue(null);
       setButtonEnabled(false);
