@@ -24,7 +24,12 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-sections">
-        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[0] = el)}>
+        <div
+          className="section section-animate-left"
+          ref={(el) => {
+            sectionRefs.current[0] = el;
+          }}
+        >
           <div className="section-text">
             <h1>About Me</h1>
             <p>
@@ -36,7 +41,12 @@ const About = () => {
           <img src={room1} alt="About Me" />
         </div>
 
-        <div className="three-cards section-animate-right" ref={(el) => (sectionRefs.current[1] = el)}>
+        <div
+          className="three-cards section-animate-right"
+          ref={(el) => {
+            sectionRefs.current[1] = el;
+          }}
+        >
           <div className="card">
             <h3>BA Degree (Psychology)</h3>
             <p>Comprehensive understanding of human behaviour and mental processes.</p>
@@ -55,7 +65,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[2] = el)}>
+        <div
+          className="section section-animate-left"
+          ref={(el) => {
+            sectionRefs.current[2] = el;
+          }}
+        >
           <img src="https://placehold.co/600x400" alt="Corporate Career" />
           <div className="section-text">
             <h2>Corporate Career</h2>
@@ -66,7 +81,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="section section-animate-right" ref={(el) => (sectionRefs.current[3] = el)}>
+        <div
+          className="section section-animate-right"
+          ref={(el) => {
+            sectionRefs.current[3] = el;
+          }}
+        >
           <div className="section-text">
             <h2>Lifelong Learning & Coaching Journey</h2>
             <p>
@@ -78,7 +98,12 @@ const About = () => {
           <img src="https://placehold.co/600x400?text=Learning+Journey" alt="Lifelong Learning and Coaching Journey" />
         </div>
 
-        <div className="section section-animate-left" ref={(el) => (sectionRefs.current[4] = el)}>
+        <div
+          className="section section-animate-left"
+          ref={(el) => {
+            sectionRefs.current[4] = el;
+          }}
+        >
           <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
           <div className="section-text">
             <h2>Coaching Philosophy</h2>
@@ -89,7 +114,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="section section-animate-right" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div
+          className="section section-animate-right"
+          ref={(el) => {
+            sectionRefs.current[5] = el;
+          }}
+        >
           <div className="section-text">
             <h2>Integrating Positive Psychology & Neuroscience</h2>
             <p>

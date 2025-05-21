@@ -26,7 +26,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="mobile-box section section-animate-left" ref={(el) => (sectionRefs.current[0] = el)}>
+      <div
+        className="mobile-box section section-animate-left"
+        ref={(el) => {
+          sectionRefs.current[0] = el;
+        }}
+      >
         <div className="section-text">
           <h1>Hi, I'm Lucia Van Der Merwe</h1>
           <h3>Well-Being and Thinking Partner</h3>
@@ -42,7 +47,12 @@ const Home = () => {
         <img src={luciaImage} alt="Lucia Van Der Merwe" />
       </div>
 
-      <div className="mobile-box section section-animate-right" ref={(el) => (sectionRefs.current[1] = el)}>
+      <div
+        className="mobile-box section section-animate-right"
+        ref={(el) => {
+          sectionRefs.current[1] = el;
+        }}
+      >
         <img src={plantBeigeImage} alt="Placeholder" />
         <div className="section-text">
           <h2>My Coaching Philosophy</h2>
@@ -57,7 +67,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mobile-box section section-animate-left" ref={(el) => (sectionRefs.current[2] = el)}>
+      <div
+        className="mobile-box section section-animate-left"
+        ref={(el) => {
+          sectionRefs.current[2] = el;
+        }}
+      >
         <div className="section-text">
           <h2>Why Choose Coaching?</h2>
           <p>
@@ -68,7 +83,12 @@ const Home = () => {
         <img src={beachImage} alt="Placeholder" />
       </div>
 
-      <div className="mobile-box section section-animate-right" ref={(el) => (sectionRefs.current[3] = el)}>
+      <div
+        className="mobile-box section section-animate-right"
+        ref={(el) => {
+          sectionRefs.current[3] = el;
+        }}
+      >
         <img src={riverImage} alt="Placeholder" />
         <div className="section-text">
           <h2>Testimonials</h2>
