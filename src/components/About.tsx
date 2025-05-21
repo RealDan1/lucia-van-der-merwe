@@ -1,3 +1,5 @@
+import room1 from '../assets/room1.png';
+
 const About = () => {
   return (
     <div className="about">
@@ -11,7 +13,7 @@ const About = () => {
               and leadership at blue chip JSE listed companies.
             </p>
           </div>
-          <img src="https://placehold.co/600x400" alt="About Me" />
+          <img src={room1} alt="About Me" />
         </div>
 
         <div className="three-cards">

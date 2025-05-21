@@ -611,6 +611,10 @@ a,
     box-shadow: 0 2px 8px rgba(108, 99, 255, 0.06);
   }
 
+  /* #lucia-image {
+    max-width: 700px;
+  } */
+
   /* Hide all images except the first in each section */
   /* .section img:not(:second-child) {
     display: none !important;

@@ -1,4 +1,4 @@
-import luciaImage from '../assets/lucia-image.png';
+import luciaImage from '../assets/lucia-image.jpg';
 import plantBeigeImage from '../assets/plant-1-beige.png';
 import beachImage from '../assets/beach.png';
 import riverImage from '../assets/river.png';
@@ -20,7 +20,7 @@ const Home = () => {
               Read more about me →
             </a>
           </div>
-          <img src={luciaImage} alt="Lucia Van Der Merwe" />
+          <img src={luciaImage} alt="Lucia Van Der Merwe" id="lucia-image" />
         </div>
       </div>
 
