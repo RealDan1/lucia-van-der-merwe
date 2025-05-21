@@ -1,4 +1,4 @@
-import luciaImage from '../assets/lucia-image.png';
+import luciaImage from '../assets/lucia-image.jpg';
 import plantBeigeImage from '../assets/plant-1-beige.png';
 import beachImage from '../assets/beach.png';
 import riverImage from '../assets/river.png';
