@@ -1,4 +1,4 @@
-import room1 from '../assets/room1.png';
+import room1 from '../assets/room1.jpg';
 import { useEffect, useRef } from 'react';
 
 const About = () => {

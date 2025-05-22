@@ -1,7 +1,7 @@
-import luciaImage from '../assets/lucia-image.png';
-import plantBeigeImage from '../assets/plant-1-beige.png';
-import beachImage from '../assets/beach.png';
-import riverImage from '../assets/river.png';
+import luciaImage from '../assets/lucia-image.jpg';
+import plantBeigeImage from '../assets/plant-1-beige.jpg';
+import beachImage from '../assets/beach.jpg';
+import riverImage from '../assets/river.jpg';
 import { useEffect, useRef } from 'react';
 
 const Home = () => {
