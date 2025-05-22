@@ -1,4 +1,5 @@
 import room1 from '../assets/room1.jpg';
+import book from '../assets/book.jpg';
 import { useEffect, useRef } from 'react';
 
 const About = () => {
@@ -95,7 +96,7 @@ const About = () => {
               South African College of Applied Psychology (SACAP) from March 2020 to June 2021.
             </p>
           </div>
-          <img src="https://placehold.co/600x400?text=Learning+Journey" alt="Lifelong Learning and Coaching Journey" />
+          <img src={book} alt="Lifelong Learning and Coaching Journey" />
         </div>
 
         <div

@@ -1,4 +1,5 @@
 import Recaptcha from './Recaptcha';
+import contact from '../assets/contact.jpg';
 
 const Contact = () => {
   return (
@@ -13,7 +14,7 @@ const Contact = () => {
         </div>
         <Recaptcha />
       </div>
-      <img src="https://placehold.co/600x400" alt="Contact" />
+      <img src={contact} alt="Contact" />
     </div>
   );
 };
