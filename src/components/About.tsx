@@ -1,6 +1,9 @@
-import room1 from '../assets/room1.jpg';
-import book from '../assets/book.jpg';
 import { useEffect, useRef } from 'react';
+import imgMountain from '../assets/mountain.jpg';
+import imgRoom1 from '../assets/room.jpg';
+import imgBook from '../assets/book.jpg';
+import imgStone from '../assets/stone.jpg';
+import imgFlower from '../assets/flower.jpg';
 
 const About = () => {
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -39,7 +42,7 @@ const About = () => {
               and leadership at blue chip JSE listed companies.
             </p>
           </div>
-          <img src={room1} alt="About Me" />
+          <img src={imgRoom1} alt="Cozy room interior representing personal background" />
         </div>
 
         <div
@@ -72,7 +75,7 @@ const About = () => {
             sectionRefs.current[2] = el;
           }}
         >
-          <img src="https://placehold.co/600x400" alt="Corporate Career" />
+          <img src={imgMountain} alt="Mountain landscape symbolizing career journey" />
           <div className="section-text">
             <h2>Corporate Career</h2>
             <p>
@@ -96,7 +99,7 @@ const About = () => {
               South African College of Applied Psychology (SACAP) from March 2020 to June 2021.
             </p>
           </div>
-          <img src={book} alt="Lifelong Learning and Coaching Journey" />
+          <img src={imgBook} alt="Open book representing lifelong learning and coaching education" />
         </div>
 
         <div
@@ -105,7 +108,7 @@ const About = () => {
             sectionRefs.current[4] = el;
           }}
         >
-          <img src="https://placehold.co/600x400" alt="Coaching Philosophy" />
+          <img src={imgStone} alt="Stone symbolizing coaching philosophy foundation" />
           <div className="section-text">
             <h2>Coaching Philosophy</h2>
             <p>
@@ -129,10 +132,7 @@ const About = () => {
               strategies that foster well-being, resilience, and personal growth.
             </p>
           </div>
-          <img
-            src="https://placehold.co/600x400?text=Positive+Psychology+%26+Neuroscience"
-            alt="Positive Psychology and Neuroscience"
-          />
+          <img src={imgFlower} alt="Flower symbolizing growth and positive psychology" />
         </div>
       </div>
     </div>

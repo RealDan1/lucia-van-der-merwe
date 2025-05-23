@@ -1,7 +1,7 @@
-import luciaImage from '../assets/lucia-image.jpg';
-import plantBeigeImage from '../assets/plant-1-beige.jpg';
-import beachImage from '../assets/beach.jpg';
-import riverImage from '../assets/river.jpg';
+import imgLucia from '../assets/lucia-image.jpg';
+import imgPlantBeige from '../assets/plant-1-beige.jpg';
+import imgBeach from '../assets/beach.jpg';
+import imgRiver from '../assets/river.jpg';
 import { useEffect, useRef } from 'react';
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
             Read more about me →
           </a>
         </div>
-        <img src={luciaImage} alt="Lucia Van Der Merwe" />
+        <img src={imgLucia} alt="Lucia Van Der Merwe" />
       </div>
 
       <div
@@ -53,7 +53,7 @@ const Home = () => {
           sectionRefs.current[1] = el;
         }}
       >
-        <img src={plantBeigeImage} alt="Placeholder" />
+        <img src={imgPlantBeige} alt="Placeholder" />
         <div className="section-text">
           <h2>My Coaching Philosophy</h2>
           <p>
@@ -80,7 +80,7 @@ const Home = () => {
             your goals. Together, we will create a roadmap to your desired future.
           </p>
         </div>
-        <img src={beachImage} alt="Placeholder" />
+        <img src={imgBeach} alt="Placeholder" />
       </div>
 
       <div
@@ -89,7 +89,7 @@ const Home = () => {
           sectionRefs.current[3] = el;
         }}
       >
-        <img src={riverImage} alt="Placeholder" />
+        <img src={imgRiver} alt="Placeholder" />
         <div className="section-text">
           <h2>Testimonials</h2>
           <p>"Lucia's guidance has been life-changing."</p>
